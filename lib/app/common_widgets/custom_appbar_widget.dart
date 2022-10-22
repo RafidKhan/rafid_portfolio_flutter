@@ -8,7 +8,6 @@ import 'package:rafid_portfolio_flutter/app/common_widgets/menu_button_white.dar
 import 'package:rafid_portfolio_flutter/app/common_widgets/white_divider.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/helper_methods.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/screen_utils.dart';
-import 'package:rafid_portfolio_flutter/app/routes/app_pages.dart';
 
 import '../helper_methods/constants.dart';
 
@@ -271,7 +270,6 @@ class CustomAppbarView extends StatelessWidget {
       builder: (controller) {
         return InkWell(
           onTap: () {
-            Get.toNamed(Routes.CONTACT_ME);
             if (isPopUp != null && isPopUp == true) {
               Get.back();
             }

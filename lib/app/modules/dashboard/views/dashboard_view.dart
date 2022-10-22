@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rafid_portfolio_flutter/app/common_widgets/custom_appbar_widget.dart';
+import 'package:rafid_portfolio_flutter/app/modules/dashboard/views/custom_appbar_widget.dart';
 import 'package:rafid_portfolio_flutter/app/common_widgets/custom_layout_builder.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/constants.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/screen_utils.dart';

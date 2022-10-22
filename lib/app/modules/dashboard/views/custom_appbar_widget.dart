@@ -8,8 +8,9 @@ import 'package:rafid_portfolio_flutter/app/common_widgets/menu_button_white.dar
 import 'package:rafid_portfolio_flutter/app/common_widgets/white_divider.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/helper_methods.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/screen_utils.dart';
+import 'package:rafid_portfolio_flutter/app/modules/dashboard/controllers/dashboard_controller.dart';
 
-import '../helper_methods/constants.dart';
+import '../../../helper_methods/constants.dart';
 
 class CustomAppbarView extends StatelessWidget {
   const CustomAppbarView({Key? key}) : super(key: key);
@@ -90,7 +91,7 @@ class CustomAppbarView extends StatelessWidget {
   }
 
   Widget darkModeButton({bool? isPopUp}) {
-    return GetBuilder<AppConfigController>(builder: (controller) {
+    return GetBuilder<DashboardController>(builder: (controller) {
       return InkWell(
         onTap: () {
           toggleMode();
@@ -117,7 +118,7 @@ class CustomAppbarView extends StatelessWidget {
   }
 
   Widget instagramButton({bool? isPopUp}) {
-    return GetBuilder<AppConfigController>(
+    return GetBuilder<DashboardController>(
       assignId: true,
       builder: (controller) {
         return InkWell(
@@ -148,7 +149,7 @@ class CustomAppbarView extends StatelessWidget {
   }
 
   Widget facebookButton({bool? isPopUp}) {
-    return GetBuilder<AppConfigController>(
+    return GetBuilder<DashboardController>(
       assignId: true,
       builder: (controller) {
         return InkWell(
@@ -178,7 +179,7 @@ class CustomAppbarView extends StatelessWidget {
   }
 
   Widget emailButton({bool? isPopUp}) {
-    return GetBuilder<AppConfigController>(
+    return GetBuilder<DashboardController>(
       assignId: true,
       builder: (controller) {
         return InkWell(
@@ -208,7 +209,7 @@ class CustomAppbarView extends StatelessWidget {
   }
 
   Widget linkedInButton({bool? isPopUp}) {
-    return GetBuilder<AppConfigController>(
+    return GetBuilder<DashboardController>(
       assignId: true,
       builder: (controller) {
         return InkWell(
@@ -265,7 +266,7 @@ class CustomAppbarView extends StatelessWidget {
   }
 
   Widget contactButton({bool? isPopUp}) {
-    return GetBuilder<AppConfigController>(
+    return GetBuilder<DashboardController>(
       assignId: true,
       builder: (controller) {
         return InkWell(

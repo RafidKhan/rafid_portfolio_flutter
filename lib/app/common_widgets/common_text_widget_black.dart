@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/constants.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/screen_utils.dart';
 
@@ -22,7 +23,7 @@ class CommonTextWidgetBlack extends StatelessWidget {
     return AutoSizeText(
       text,
       maxLines: maxLines,
-      style: TextStyle(
+      style: GoogleFonts.lora(
           color: isLightModeEnabled() ? colorBlack : colorWhite,
           fontSize: fontSize,
           fontWeight: fontWeight),

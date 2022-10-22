@@ -12,6 +12,7 @@ dependencies:
   url_launcher: 6.1.6
   auto_size_text: 3.0.0
   animate_do: 2.1.0
+  google_fonts: 3.0.1
   flutter: 
     sdk: flutter
 

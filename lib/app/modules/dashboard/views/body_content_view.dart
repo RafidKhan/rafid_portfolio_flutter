@@ -1,10 +1,10 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rafid_portfolio_flutter/app/common_widgets/common_text_widget_black.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/constants.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/screen_utils.dart';
 import 'package:rafid_portfolio_flutter/app/modules/dashboard/controllers/dashboard_controller.dart';
-
 import '../../../common_widgets/custom_text_widget_fix_color.dart';
 
 class BodyContentView extends GetView<DashboardController> {
@@ -13,31 +13,33 @@ class BodyContentView extends GetView<DashboardController> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: ListView.builder(
-        padding: EdgeInsets.zero,
-        itemCount: 1,
-        itemBuilder: (context, index) {
-          if (boxConstraints!.maxWidth > 1200) {
-            return Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: bodyContents(
-                  width: boxConstraints!.biggest.width / 2,
-                  context: context),
-            );
-          } else if (boxConstraints!.maxWidth > 800 &&
-              boxConstraints!.maxWidth < 1200) {
-            return Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: bodyContents(
-                  width: boxConstraints!.biggest.width / 2, context: context),
-            );
-          } else {
-            return Column(
-              children: bodyContents(
-                  width: boxConstraints!.biggest.width, context: context),
-            );
-          }
-        },
+      child: FadeInUpBig(
+        child: ListView.builder(
+          padding: EdgeInsets.zero,
+          itemCount: 1,
+          itemBuilder: (context, index) {
+            if (boxConstraints!.maxWidth > 1200) {
+              return Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: bodyContents(
+                    width: boxConstraints!.biggest.width / 2,
+                    context: context),
+              );
+            } else if (boxConstraints!.maxWidth > 800 &&
+                boxConstraints!.maxWidth < 1200) {
+              return Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: bodyContents(
+                    width: boxConstraints!.biggest.width / 2, context: context),
+              );
+            } else {
+              return Column(
+                children: bodyContents(
+                    width: boxConstraints!.biggest.width, context: context),
+              );
+            }
+          },
+        ),
       ),
     );
   }

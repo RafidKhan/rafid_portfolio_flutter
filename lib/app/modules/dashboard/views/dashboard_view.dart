@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rafid_portfolio_flutter/app/modules/dashboard/views/contact_view.dart';
 import 'package:rafid_portfolio_flutter/app/modules/dashboard/views/custom_appbar_widget.dart';
 import 'package:rafid_portfolio_flutter/app/common_widgets/custom_layout_builder.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/constants.dart';
@@ -19,7 +20,11 @@ class DashboardView extends GetView<DashboardController> {
             body: Column(
               children: [
                 CustomAppbarView(),
-                BodyContentView(),
+                controller.initialViewType.value == 0
+                    ? BodyContentView()
+                    : controller.initialViewType.value == 1
+                        ? ContactView()
+                        : const SizedBox(),
               ],
             ),
           ),

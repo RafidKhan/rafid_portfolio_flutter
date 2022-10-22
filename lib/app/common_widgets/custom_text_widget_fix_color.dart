@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/constants.dart';
 
 class CommonTextWidgetColorFixed extends StatelessWidget {
@@ -23,7 +24,7 @@ class CommonTextWidgetColorFixed extends StatelessWidget {
     return AutoSizeText(
       text,
       maxLines: maxLines,
-      style: TextStyle(
+      style: GoogleFonts.lora(
           color: textColor, fontSize: fontSize, fontWeight: fontWeight),
       overflow: TextOverflow.ellipsis,
     );

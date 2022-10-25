@@ -30,5 +30,5 @@ final String myBio =
     "A dedicated mobile application developer who writes clean code, using state management to develop android and ios applications.";
 final String workExperience3 =
     "Working at Dhrubok Infotech Services Ltd as Junior Flutter Application Developer";
-final String workExperience2 = "ex Junior Software Engineer at Riseup Labs";
-final String workExperience1 = "ex Flutter Engineer at Borak Services Limited";
+final String workExperience2 = "Ex Junior Software Engineer at Riseup Labs";
+final String workExperience1 = "Ex Flutter Engineer at Borak Services Limited";

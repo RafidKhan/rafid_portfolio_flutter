@@ -5,6 +5,7 @@ import 'package:rafid_portfolio_flutter/app/common_widgets/common_text_widget_bl
 import 'package:rafid_portfolio_flutter/app/helper_methods/constants.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/screen_utils.dart';
 import 'package:rafid_portfolio_flutter/app/modules/dashboard/controllers/dashboard_controller.dart';
+import 'package:rafid_portfolio_flutter/app/modules/dashboard/views/projects_view.dart';
 import '../../../common_widgets/custom_text_widget_fix_color.dart';
 
 class BodyContentView extends GetView<DashboardController> {
@@ -19,23 +20,39 @@ class BodyContentView extends GetView<DashboardController> {
           itemCount: 1,
           itemBuilder: (context, index) {
             if (boxConstraints!.maxWidth > 1200) {
-              return Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: bodyContents(
-                    width: boxConstraints!.biggest.width / 2,
-                    context: context),
+              return Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: bodyContents(
+                        width: boxConstraints!.biggest.width / 2,
+                        context: context),
+                  ),
+                  ProjectsView()
+                ],
               );
             } else if (boxConstraints!.maxWidth > 800 &&
                 boxConstraints!.maxWidth < 1200) {
-              return Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: bodyContents(
-                    width: boxConstraints!.biggest.width / 2, context: context),
+              return Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: bodyContents(
+                        width: boxConstraints!.biggest.width / 2,
+                        context: context),
+                  ),
+                  ProjectsView()
+                ],
               );
             } else {
               return Column(
-                children: bodyContents(
-                    width: boxConstraints!.biggest.width, context: context),
+                children: [
+                  Column(
+                    children: bodyContents(
+                        width: boxConstraints!.biggest.width, context: context),
+                  ),
+                  ProjectsView()
+                ],
               );
             }
           },

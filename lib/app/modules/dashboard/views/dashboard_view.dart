@@ -6,6 +6,7 @@ import 'package:rafid_portfolio_flutter/app/common_widgets/custom_layout_builder
 import 'package:rafid_portfolio_flutter/app/helper_methods/constants.dart';
 import 'package:rafid_portfolio_flutter/app/helper_methods/screen_utils.dart';
 import 'package:rafid_portfolio_flutter/app/modules/dashboard/views/body_content_view.dart';
+import 'package:rafid_portfolio_flutter/app/modules/dashboard/views/projects_view.dart';
 import '../controllers/dashboard_controller.dart';
 import 'package:animate_do/animate_do.dart';
 

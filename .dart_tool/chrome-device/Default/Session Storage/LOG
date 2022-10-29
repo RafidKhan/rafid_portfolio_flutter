@@ -1,4 +1,5 @@
-2022/10/22-19:40:17.820 2e03 Reusing MANIFEST /private/var/folders/yx/3_1hslks4tqfx43vfkjjv7sw0000gn/T/flutter_tools.XKJmhv/flutter_tools_chrome_device.1hFzl9/Default/Session Storage/MANIFEST-000001
-2022/10/22-19:40:17.820 2e03 Recovering log #3
-2022/10/22-19:40:17.820 2e03 (ignoring error) /private/var/folders/yx/3_1hslks4tqfx43vfkjjv7sw0000gn/T/flutter_tools.XKJmhv/flutter_tools_chrome_device.1hFzl9/Default/Session Storage/000003.log: dropping 23709 bytes; Corruption: checksum mismatch
-2022/10/22-19:40:17.821 2e03 Reusing old log /private/var/folders/yx/3_1hslks4tqfx43vfkjjv7sw0000gn/T/flutter_tools.XKJmhv/flutter_tools_chrome_device.1hFzl9/Default/Session Storage/000003.log 
+2022/10/29-18:44:29.291 3003 Reusing MANIFEST /private/var/folders/yx/3_1hslks4tqfx43vfkjjv7sw0000gn/T/flutter_tools.0eHq42/flutter_tools_chrome_device.SEJtma/Default/Session Storage/MANIFEST-000001
+2022/10/29-18:44:29.292 3003 Recovering log #3
+2022/10/29-18:44:29.292 3003 (ignoring error) /private/var/folders/yx/3_1hslks4tqfx43vfkjjv7sw0000gn/T/flutter_tools.0eHq42/flutter_tools_chrome_device.SEJtma/Default/Session Storage/000003.log: dropping 25812 bytes; Corruption: checksum mismatch
+2022/10/29-18:44:29.292 3003 (ignoring error) /private/var/folders/yx/3_1hslks4tqfx43vfkjjv7sw0000gn/T/flutter_tools.0eHq42/flutter_tools_chrome_device.SEJtma/Default/Session Storage/000003.log: dropping 130 bytes; Corruption: missing start of fragmented record(2)
+2022/10/29-18:44:29.292 3003 Reusing old log /private/var/folders/yx/3_1hslks4tqfx43vfkjjv7sw0000gn/T/flutter_tools.0eHq42/flutter_tools_chrome_device.SEJtma/Default/Session Storage/000003.log 

@@ -46,6 +46,22 @@ class ProjectsView extends GetView<DashboardController> {
               ),
             ],
           ),
+          SizedBox(
+            height: 150,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.zero,
+              itemCount: 100,
+              itemBuilder: (context, index) {
+               return Container(
+                 height: 100,
+                 width: 200,
+                 color: Colors.amber,
+                 margin: EdgeInsets.all(10),
+               );
+              },
+            ),
+          ),
         ],
       ),
     );
